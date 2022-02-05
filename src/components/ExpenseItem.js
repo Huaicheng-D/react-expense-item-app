@@ -1,12 +1,16 @@
 import "./ExpenseItem.css";
+import ExpenseDate from "./ExpenseDate";
 
-function ExpenseItem() {
+function ExpenseItem(props) {
+  const expenseTitle = props.title;
+  const expenseAmount = props.amount;
+
   return (
     <div className="expense-item">
-      <div className="expense-item__date">March 28th 2021</div>
+      <ExpenseDate date={props.date} />
       <div className="expense-item__description">
-        <h2>Car Insurance</h2>
-        <div className="expense-item__price">$294.67</div>
+        <h2>{expenseTitle}</h2>
+        <div className="expense-item__price">{expenseAmount}</div>
       </div>
     </div>
   );
