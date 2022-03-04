@@ -1,0 +1,31 @@
+.navbar {
+  width: 100%;
+  background-color: lightslategray;
+  height: 40px;
+  box-shadow: slategrey;
+  border-radius: 2px;
+}
+
+.navItem {
+  list-style: none;
+  overflow: hidden;
+  background-color: slategray;
+  height: 40px;
+}
+.navItem li {
+  padding-top: 10px;
+  display: inline-block;
+}
+
+.navItem li a {
+  color: snow;
+  margin-right: 8px;
+  text-decoration: none;
+  text-align: center;
+  padding: 20px 20px;
+  font-size: 18px;
+}
+
+.navItem li a:hover {
+  background-color: steelblue;
+}
